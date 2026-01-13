@@ -5,7 +5,6 @@ import BestSellers from "./Landing/component/BestSeller";
 import FlashSales from "./Landing/component/FlashSales";
 import NewArrival from "./Landing/component/NewArrival";
 import NewsLetter from "./Landing/component/NewsLetter";
-import Categories from "../../components/header/Categories";
 const ImageSlider = dynamic(() => import("./Landing/component/ImageSlider"), {
   loading: () => <p>Loading slider...</p>,
 });
@@ -25,8 +24,7 @@ export default function Home() {
       <NewArrival />
       <CustomerReviews />
       <NewsLetter />
-      <Categories />
-      {/* <Footer /> */}
+    }
     </div>
   );
 }
