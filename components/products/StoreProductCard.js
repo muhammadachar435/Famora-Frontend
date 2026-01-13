@@ -24,7 +24,7 @@ export default function StoreProductCard({ product, category }) {
     <div className="relative mx-auto w-80 sm:w-90 flex-shrink-0 rounded-2xl shadow-md pb-4 bg-white dark:bg-[#222222] hover:scale-101 duration-500 transition-all">
       <Link href={`${category === "all" ? `/shop/${product._id}` : `/${category}/${product._id}`}`}>
         <img
-          src={`http://localhost:5000/uploads/${hovered ? product.images[1] : product.images[0]}`}
+          src={`${process.env.NEXT_PUBLIC_API_URL}/uploads/${hovered ? product.images[1] : product.images[0]}`}
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
           className="w-full h-auto sm:h-auto rounded-2xl rounded-b-none"
