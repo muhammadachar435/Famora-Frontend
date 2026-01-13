@@ -24,7 +24,7 @@ export default function Home() {
       <NewArrival />
       <CustomerReviews />
       <NewsLetter />
-    }
+    
     </div>
   );
 }
