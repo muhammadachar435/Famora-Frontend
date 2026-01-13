@@ -1,4 +1,4 @@
-const BASE = process.env.NEXT_PUBLIC_PRODUCT;
+const BASE = "https://famora-backend-production.up.railway.app/products";
 
 // Get Product
 export const getProducts = async () => {
