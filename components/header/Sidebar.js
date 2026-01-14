@@ -31,17 +31,17 @@ function Sidebar({ sidebar, setSidebar }) {
       {sidebarData.map((data) => {
         const Icon = data.icon; // Icon Store
         return (
-          <ul key={data.id} className="">
+          <ul key={data.id}>
             <li
               className={` ${
                 pathName === data.pathName && sidebar
-                  ? "bg-[#685cfe] text-white "
-                  : "text-[#222222] bg-[#f6f4ff]"
-              } flex items-center space-x-4 rounded-md p-2 font-medium font-inter ${
+                  ? "bg-[#685cfe] text-white"
+                  : "text-[#222222] bg-gray-200 dark:text-[#393a3a] dark:bg-white"
+              } flex items-center space-x-4 rounded-md p-2 font-medium font-inter duration-300 transition-all ${
                 dropDown ? "my-3" : "my-6"
               }`}
             >
-              <Link href={`${data.pathName ? data.pathName : ""}`} className="">
+              <Link href={`${data.pathName ? data.pathName : ""}`}>
                 <Icon className="w-6 h-6 " />
               </Link>
               <Link
