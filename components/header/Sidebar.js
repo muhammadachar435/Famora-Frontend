@@ -14,6 +14,21 @@ function Sidebar({ sidebar, setSidebar }) {
   const [dropDown, setDropDown] = useState(false); // dropDown State
   const sidebarRef = useRef();
 
+  console.log("pathName", pathName);
+
+  useEffect(() => {
+    if (sidebar) {
+      document.body.style.overflow = "hidden"; // stop background scroll
+    } else {
+      document.body.style.overflow = "auto"; // restore scroll
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [sidebar]);
+
+  // useEffect
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (sidebarRef.current && !sidebarRef.current.contains(e.target)) {
@@ -46,7 +61,7 @@ function Sidebar({ sidebar, setSidebar }) {
       {sidebarData.map((data) => {
         const Icon = data.icon; // Icon Store
         return (
-          <ul key={data.id} className="">
+          <ul key={data.id}>
             <li
               className={` ${
                 pathName === data.pathName && sidebar
@@ -90,7 +105,7 @@ function Sidebar({ sidebar, setSidebar }) {
                     href={`${label.path}`}
                     key={label.id}
                     className={` ${
-                      pathName === data.pathName && sidebar
+                      pathName === label.path && sidebar
                         ? "bg-[#685cfe] text-white "
                         : "text-[#222222] bg-gray-200 dark:text-[#393a3a] dark:bg-white"
                     } flex items-center space-x-4 rounded-md my-5 px-2 py-1 font-inter font-medium duration-300 transition-all`}
