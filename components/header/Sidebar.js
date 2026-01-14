@@ -93,7 +93,7 @@ function Sidebar({ sidebar, setSidebar }) {
                       pathName === data.pathName && sidebar
                         ? "bg-[#685cfe] text-white "
                         : "text-[#222222] bg-gray-200 dark:text-[#393a3a] dark:bg-white"
-                    } flex items-center space-x-4 rounded-md my-3 px-2 py-1 font-inter font-medium duration-300 transition-all`}
+                    } flex items-center space-x-4 rounded-md my-5 px-2 py-1 font-inter font-medium duration-300 transition-all`}
                   >
                     <DropDown /> <span>{label.title}</span>
                   </Link>
