@@ -53,7 +53,7 @@ function Sidebar({ sidebar, setSidebar }) {
                   ? "bg-[#685cfe] text-white "
                   : "text-[#222222] bg-gray-200 dark:text-[#393a3a] dark:bg-white"
               } flex items-center space-x-4 rounded-md p-2 font-medium font-inter duration-300 transition-all ${
-                dropDown ? "my-3" : "my-6"
+                dropDown ? "my-5" : "my-6"
               }`}
             >
               <Link
