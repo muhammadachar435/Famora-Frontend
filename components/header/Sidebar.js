@@ -1,7 +1,8 @@
 // import React/NextJS Libraries
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useRef } from "react";
 
 // Import Icon & Data
 import { ChevronDown } from "lucide-react";
@@ -11,6 +12,20 @@ import { sidebarData } from "../../data/Sidebardata";
 function Sidebar({ sidebar, setSidebar }) {
   const pathName = usePathname(); // to access the pathname
   const [dropDown, setDropDown] = useState(false); // dropDown State
+  const sidebarRef = useRef();
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (sidebarRef.current && !sidebarRef.current.contains(e.target)) {
+        setSidebar(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [setSidebar]);
 
   // sidebar open & close
   function handleSidebar() {
@@ -27,29 +42,29 @@ function Sidebar({ sidebar, setSidebar }) {
 
   // UI Design
   return (
-    <div className="mt-30">
+    <div ref={sidebarRef} className="mt-30">
       {sidebarData.map((data) => {
         const Icon = data.icon; // Icon Store
         return (
-          <ul key={data.id}>
+          <ul key={data.id} className="">
             <li
               className={` ${
                 pathName === data.pathName && sidebar
-                  ? "bg-[#685cfe] text-white"
+                  ? "bg-[#685cfe] text-white "
                   : "text-[#222222] bg-gray-200 dark:text-[#393a3a] dark:bg-white"
               } flex items-center space-x-4 rounded-md p-2 font-medium font-inter duration-300 transition-all ${
                 dropDown ? "my-3" : "my-6"
               }`}
             >
-              <Link href={`${data.pathName ? data.pathName : ""}`}>
-                <Icon className="w-6 h-6 " />
-              </Link>
               <Link
                 href={`${data.pathName ? data.pathName : ""}`}
                 onClick={() => {
                   handleSidebar();
                 }}
               >
+                <Icon className="w-6 h-6 " />
+              </Link>
+              <Link href={`${data.pathName ? data.pathName : ""}`}>
                 {data.pathName ? (
                   <span>{data.title}</span>
                 ) : (
@@ -59,7 +74,7 @@ function Sidebar({ sidebar, setSidebar }) {
                     }}
                     className="cursor-pointer flex items-center justify-between w-53.5"
                   >
-                    {data.title} <ChevronDown className="" />
+                    {data.title} <ChevronDown />
                   </button>
                 )}
               </Link>
