@@ -112,13 +112,8 @@ ${active === index ? "scale-105 shadow-md" : "opacity-70 hover:opacity-100 hover
                   <span className="font-semibold text-black  dark:text-white">Clothes Wash:</span>{" "}
                   {data.specifications.care}
                 </p>
-                <p className=" text-[#424444] dark:text-white font-sans">
-                  <span className="font-semibold text-black  dark:text-white">Colors:</span>{" "}
-                  {data.colors.join(", ")}
-                </p>
-
+              
                 {/* colors */}
-
                 <div className="flex items-center gap-3 flex-wrap">
                   <span className="font-semibold text-black font-sans  dark:text-white">Colors:</span>
                   {data.colors.map((colors, i) => (
