@@ -435,7 +435,7 @@ export default function EditProduct({ id, closeup, onSaved, onClose }) {
               <div key={index}>
                 <img
                   key={index}
-                  src={`http://localhost:5000/uploads/${img}`}
+                  src={`${process.env.NEXT_PUBLIC_API_URL}/uploads/${img}`}
                   alt="existing"
                   className="w-20 h-20 object-cover rounded"
                 />
