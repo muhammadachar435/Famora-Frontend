@@ -100,12 +100,12 @@ export default function Header() {
               <span className=" lg:hidden">
                 {sidebar ? (
                   <MdMenuOpen
-                    className="w-7 h-7 cursor-pointer text-gray-800"
+                    className="w-7 h-7 cursor-pointer text-gray-800 text-gray-800 dark:text-white"
                     onClick={() => setSidebar(!sidebar)}
                   />
                 ) : (
                   <IoMdMenu
-                    className="w-7 h-7 cursor-pointer text-gray-800"
+                    className="w-7 h-7 cursor-pointer text-gray-800 text-gray-800 dark:text-white"
                     onClick={() => setSidebar(!sidebar)}
                   />
                 )}
@@ -262,7 +262,7 @@ export default function Header() {
       {/* 🔹 Sidebar Menu */}
       {sidebar && (
         <nav
-          className={`fixed top-0 left-0 shadow-2xl h-screen w-75 p-4  bg-white z-40 text-black transition-all duration-300 ease-in-out font-semibold text-lg }`}
+        className={`fixed top-0 left-0 shadow-2xl h-screen w-75 p-4 bg-white dark:bg-[#222222] rounded-md z-40 text-black transition-all duration-300 ease-in-out font-semibold text-lg }`}
         >
           <Sidebar sidebar={sidebar} setSidebar={setSidebar} />
         </nav>
