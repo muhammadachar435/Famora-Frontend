@@ -173,3 +173,32 @@
   scrollbar-width: thin;
   scrollbar-color: blue #f1f1f1;
 }
+
+.scroll-gray {
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #9ca3af #e5e7eb;
+}
+
+/* WebKit styles */
+.scroll-gray::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scroll-gray::-webkit-scrollbar-track {
+  background: #e5e7eb;
+  border-radius: 10px;
+}
+
+.scroll-gray::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.scroll-gray::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+  background-clip: content-box;
+}
