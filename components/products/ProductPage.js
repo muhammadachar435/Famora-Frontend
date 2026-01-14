@@ -104,7 +104,7 @@ export default function ProductPage({ title, category }) {
         viewport={{ once: true, amount: 0.1 }}
         className=" relative inline-block mx-4 mt-4 sm:mt-8"
       >
-        <p className="text-2xl sm:text-3xl lg:text-4xl font-sans font-bold text-[#373a3a] dark:text-white">
+        <p className="text-3xl md:text-4xl font-sans font-bold text-[#373a3a] dark:text-white">
           {title}
         </p>
       </motion.div>
