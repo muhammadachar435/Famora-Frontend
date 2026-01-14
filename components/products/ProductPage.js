@@ -216,7 +216,7 @@ export default function ProductPage({ title, category }) {
       )}
       {/* Pagination */}
       {totalPages > 1 && (
-        <div className="flex justify-center mt-20 space-x-3 sm:space-x-16">
+      <div className="flex justify-center mt-20 space-x-3 w-full  max-w-2xl md:max-w-3xl lg:max-w-5xl overflow-x-auto sm:space-x-16 mx-auto">
           <button
             disabled={currentPage === 1}
             onClick={() => setCurrentPage(currentPage - 1)}
