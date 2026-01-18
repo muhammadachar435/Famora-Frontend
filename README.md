@@ -1,8 +1,9 @@
 # Famora E-Commerce Website [Frontend]
 
+A responsive and SEO-friendly e-commerce frontend built using Next.js, TypeScript, and Tailwind CSS. Part of a full-stack MERN project with secure authentication, admin management, and smooth shopping experience.
+
 <img width="1366" height="641" alt="Screenshot (1708)" src="https://github.com/user-attachments/assets/3ab3fff4-e477-432d-82d1-194d1f5d9ec5" />
 
-A responsive and SEO-friendly e-commerce frontend built using Next.js, TypeScript, and Tailwind CSS. Part of a full-stack MERN project with secure authentication, admin management, and smooth shopping experience.
 
 ## Features
 
