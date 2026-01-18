@@ -1,41 +1,68 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Famora E-Commerce Website [Frontend]
 
-## Getting Started
+<img width="1366" height="641" alt="Screenshot (1708)" src="https://github.com/user-attachments/assets/3ab3fff4-e477-432d-82d1-194d1f5d9ec5" />
 
-First, run the development server:
+A responsive and SEO-friendly e-commerce frontend built using Next.js, TypeScript, and Tailwind CSS. Part of a full-stack MERN project with secure authentication, admin management, and smooth shopping experience.
 
-```bash
+Features
+
+Responsive UI/UX designed in Figma for desktop and mobile devices.
+
+SEO-optimized pages using Next.js, achieving ~92% SEO score.
+
+Secure login/register with role-based admin access.
+
+Add to Cart functionality and product management features.
+
+Integrated with backend APIs (Node.js, Express.js, MongoDB).
+
+Deployed using Vercel (frontend).
+
+Tech Stack
+
+Frontend: Next.js, TypeScript, Tailwind CSS
+
+Backend: Node.js, Express.js, MongoDB
+
+Tools: Postman (API testing), Git/GitHub (version control)
+
+Design: Figma
+
+Deployment: Vercel
+
+Screenshots
+
+Add screenshots of homepage, product page, cart, admin dashboard here
+
+Getting Started
+
+Clone the repository:
+
+git clone https://github.com/yourusername/famora-frontend.git
+
+
+Navigate to the project folder:
+
+cd famora-frontend
+
+
+Install dependencies:
+
+npm install
+
+
+Run the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open http://localhost:3000
+ in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Future Improvements
 
-## Learn More
+Integration with payment gateways.
 
-To learn more about Next.js, take a look at the following resources:
+Enhanced AI-based product recommendations.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# Famora-Frontend
-Famora is a modern E-commerce frontend built with Next.js and Tailwind CSS. It includes secure login &amp; registration system, light and dark mode support, product browsing, cart, and checkout experience with a clean responsive UI.
->>>>>>> 07308eec321e149b634c0c0da7f4af86597f7d9a
+Further performance and accessibility optimization.
