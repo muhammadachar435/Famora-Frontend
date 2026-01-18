@@ -4,7 +4,7 @@
 
 A responsive and SEO-friendly e-commerce frontend built using Next.js, TypeScript, and Tailwind CSS. Part of a full-stack MERN project with secure authentication, admin management, and smooth shopping experience.
 
-Features
+## Features
 
 Responsive UI/UX designed in Figma for desktop and mobile devices.
 
@@ -18,7 +18,7 @@ Integrated with backend APIs (Node.js, Express.js, MongoDB).
 
 Deployed using Vercel (frontend).
 
-Tech Stack
+## Tech Stack
 
 Frontend: Next.js, TypeScript, Tailwind CSS
 
@@ -30,36 +30,51 @@ Design: Figma
 
 Deployment: Vercel
 
-Screenshots
+## Project Structure
 
-Add screenshots of homepage, product page, cart, admin dashboard here
+frontend/
 
-Getting Started
+├─ .next/                 
+├─ app/                   
+├─ components/            
+├─ context/               
+├─ data/                   
+├─ Images/                
+├─ lib/                  
+├─ node_modules/           
+├─ public/                
+├─ services/               
+├─ UiModel/                
+├─ .env                
+├─ .gitignore              
+├─ components.json         
+├─ eslint.config.mjs       
+├─ next-env.d.ts           
+├─ next.config.ts          
+├─ package-lock.json       
+├─ package.json            
+├─ postcss.config.mjs      
+├─ README.md               
+├─ tailwind.config.js      
+└─ tsconfig.json           
 
-Clone the repository:
+## Getting Started
 
-git clone https://github.com/yourusername/famora-frontend.git
+## Clone the repository:
+git clone https://github.com/muhammadachar435/Famora-Frontend.git
 
-
-Navigate to the project folder:
-
+## Navigate to the project folder:
 cd famora-frontend
 
-
-Install dependencies:
-
+## Install dependencies:
 npm install
 
-
-Run the development server:
-
+## Run the development server:
 npm run dev
 
+Open http://localhost:3000 in your browser.
 
-Open http://localhost:3000
- in your browser.
-
-Future Improvements
+## Future Improvements
 
 Integration with payment gateways.
 
